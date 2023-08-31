@@ -29,6 +29,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
+        .container_2 {
+            max-width: 800px;
+            margin: 0 auto; 
+            padding: 2rem;
+            background-color: #35495e;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color: #ffffff;
+            text-align: center;
+        }
         .container_pong {
             max-width: 800px;
             margin: 0 auto; 
@@ -98,12 +108,16 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/bard-pedersen/">https://www.linkedin.com/in/bard-pedersen/</a></p>
             <p>GitHub site: <a href="https://github.com/bardpedersen">https://github.com/bardpedersen</a></p>
             <p>Beer brewing: <a href="https://untappd.com/OlogSant">https://untappd.com/OlogSant</a></p>
+            
         </div>
     </div>
 
-    <div class="container_pong">
-        <h2>Pong game</h2>
+    <div class="container_2">
+        <h1>Pong game</h1>
         <p>Left player uses "w" and "a" to move, right player uses "o" and "l" to move</p>
+    </div>
+
+    <div class="container_pong">
         <canvas width="750" height="585" id="game"></canvas>
         <script> 
             const canvas = document.getElementById('game');
