@@ -103,6 +103,7 @@
 
     <div class="container_pong">
         <h2>Pong game</h2>
+        <p>Left player uses "w" and "a" to move, right player uses "o" and "l" to move</p>
         <canvas width="750" height="585" id="game"></canvas>
         <script> 
             const canvas = document.getElementById('game');
@@ -246,12 +247,12 @@
             // listen to keyboard events to move the paddles
             document.addEventListener('keydown', function(e) {
 
-            // up arrow key
-            if (e.which === 38) {
+            // o key
+            if (e.which === 79) {
                 rightPaddle.dy = -paddleSpeed;
             }
-            // down arrow key
-            else if (e.which === 40) {
+            // l key
+            else if (e.which === 76) {
                 rightPaddle.dy = paddleSpeed;
             }
 
@@ -267,7 +268,7 @@
 
             // listen to keyboard events to stop the paddle if key is released
             document.addEventListener('keyup', function(e) {
-            if (e.which === 38 || e.which === 40) {
+            if (e.which === 79 || e.which === 76) {
                 rightPaddle.dy = 0;
             }
 
